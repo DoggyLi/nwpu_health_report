@@ -30,7 +30,7 @@ browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
 browser.refresh()
 time.sleep(1)
 
-browser.find_element(By.XPATH, "//div[@class='weui-cells page_category-content']").click() # 提交填报信息
+browser.find_element(By.XPATH, "//div[@class='weui-btn-area']").click() # 提交填报信息
 browser.find_element(By.XPATH, "//label[@class='weui-cell weui-cell_active weui-check__label']").click() # 已核实 
 browser.find_element(By.ID, "save_div").click() # 确认提交
 time.sleep(1)
