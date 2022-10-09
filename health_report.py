@@ -18,10 +18,9 @@ browser = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 # open nwpu
 browser.get('https://uis.nwpu.edu.cn/cas/login?service=https://ecampus.nwpu.edu.cn/')
 browser.maximize_window()
-
+time.sleep(1)
 # login
 username = browser.find_element(By.ID, "username")
-time.sleep(1)
 username.send_keys(USERNAME)
 password = browser.find_element(By.ID, "password")
 password.send_keys(PASSWORD)
