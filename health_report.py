@@ -21,6 +21,7 @@ browser.maximize_window()
 
 # login
 username = browser.find_element(By.ID, "username")
+time.sleep(1)
 username.send_keys(USERNAME)
 password = browser.find_element(By.ID, "password")
 password.send_keys(PASSWORD)
