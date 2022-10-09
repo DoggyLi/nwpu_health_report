@@ -20,9 +20,9 @@ browser.get('https://uis.nwpu.edu.cn/cas/login?service=https://ecampus.nwpu.edu.
 browser.maximize_window()
 time.sleep(1)
 # login
-username = browser.find_element(By.ID, "username").click()
+username = browser.find_element(By.ID, "username")
 username.send_keys(USERNAME)
-password = browser.find_element(By.ID, "password").click()
+password = browser.find_element(By.ID, "password")
 password.send_keys(PASSWORD)
 browser.find_element(By.NAME, "submit").click()
 time.sleep(1)
