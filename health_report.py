@@ -12,7 +12,7 @@ chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
-browser = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
+browser = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 
 
 # open nwpu
@@ -22,7 +22,6 @@ browser.maximize_window()
 # login
 username = browser.find_element(By.ID, "username")
 username.send_keys(USERNAME)
-time.sleep(1)
 password = browser.find_element(By.ID, "password")
 password.send_keys(PASSWORD)
 browser.find_element(By.NAME, "submit").click()
