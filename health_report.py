@@ -20,7 +20,7 @@ browser.get('https://uis.nwpu.edu.cn/cas/login?service=https://ecampus.nwpu.edu.
 browser.maximize_window()
 time.sleep(1)
 # login
-browser.find_element(By.XPATH, "//*[@id="vue_main"]/div[2]/div[3]/div/div[2]/div[3]/div/div/div[1]/ul")
+browser.find_element(By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[1]/ul")
 browser.find_element(By.TAG_NAME, "密码登陆").click()
 time.sleep(1)
 username = browser.find_element(By.ID, "username")
