@@ -26,7 +26,7 @@ username = browser.find_element(By.ID, "username")
 username.send_keys(USERNAME)
 password = browser.find_element(By.ID, "password")
 password.send_keys(PASSWORD)
-browser.find_element(By.NAME, "button").click()
+browser.find_element(By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[2]/div/form/div[4]/div/input[6]").click()
 
 # browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
 browser.refresh()
