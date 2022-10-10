@@ -32,7 +32,7 @@ time.sleep(1)
 # browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
 # browser.refresh()
 # time.sleep(1)
-print(browser.title)
+print(browser.current_url)
 
 
 # browser.find_element(By.XPATH, "//a[@class='weui-btn weui-btn_primary']").click()# 提交填报信息
