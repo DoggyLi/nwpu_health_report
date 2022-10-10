@@ -22,10 +22,8 @@ browser.maximize_window()
 time.sleep(1)
 # # login
 browser.find_element(By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[1]/ul/li[3]").click()
-username = browser.find_element(By.ID, "username").click()
-username.send_keys(USERNAME)
-password = browser.find_element(By.ID, "password").click()
-password.send_keys(PASSWORD)
+browser.find_element(By.ID, "username").click().send_keys(USERNAME)
+browser.find_element(By.ID, "password").click().send_keys(PASSWORD)
 browser.find_element(By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[2]/div/form/div[4]/div/input[6]").click()
 
 # browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
