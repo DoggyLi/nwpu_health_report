@@ -13,6 +13,7 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 browser = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
+hotbaby = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 
 
 # open nwpu
@@ -29,11 +30,11 @@ password.send_keys(PASSWORD)
 browser.find_element(By.NAME, "button").click()
 time.sleep(1)
 
-browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
-browser.refresh()
+hotbaby.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
+hotbaby.refresh()
 time.sleep(1)
 
-print(browser.page_source)
+print(hotbaby.page_source)
 
 # browser.find_element(By.XPATH, "/html/body/div[2]/form/div[5]/div[17]/div/a").click() # 提交填报信
 # browser.find_element(By.XPATH, "//label[@class='weui-cell weui-cell_active weui-check__label']").click() # 已核实 
