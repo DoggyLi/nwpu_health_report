@@ -30,15 +30,14 @@ browser.find_element(By.NAME, "button").click()
 time.sleep(1)
 
 browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
-print(browser.page_source)
 browser.refresh()
 time.sleep(1)
 
 
 
-# browser.find_element(By.XPATH, "/html/body/div[2]/form/div[5]/div[17]/div/a").click() # 提交填报信
-# browser.find_element(By.XPATH, "//label[@class='weui-cell weui-cell_active weui-check__label']").click() # 已核实 
-# browser.find_element(By.ID, "save_div").click() # 确认提交
-# time.sleep(1)
+browser.find_element(By.XPATH, "//a[@class='weui-btn weui-btn_primary']").click()# 提交填报信
+browser.find_element(By.XPATH, "//label[@class='weui-cell weui-cell_active weui-check__label']").click() # 已核实 
+browser.find_element(By.ID, "save_div").click() # 确认提交
+time.sleep(1)
     
 browser.quit()
