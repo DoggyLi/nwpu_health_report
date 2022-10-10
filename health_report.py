@@ -16,17 +16,19 @@ browser = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 
 
 # open nwpu
-browser.get('https://uis.nwpu.edu.cn/cas/login?service=https://ecampus.nwpu.edu.cn/')
+# browser.get('https://uis.nwpu.edu.cn/cas/login?service=https://ecampus.nwpu.edu.cn/')
+browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
 browser.maximize_window()
 time.sleep(1)
-# login
-browser.find_element(By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[1]/ul/li[3]").click()
-time.sleep(1)
-username = browser.find_element(By.ID, "username")
-username.send_keys(USERNAME)
-password = browser.find_element(By.ID, "password")
-password.send_keys(PASSWORD)
-browser.find_element(By.NAME, "button").click()
+# # login
+# browser.find_element(By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[1]/ul/li[3]").click()
+# time.sleep(1)
+# username = browser.find_element(By.ID, "username")
+# username.send_keys(USERNAME)
+# password = browser.find_element(By.ID, "password")
+# password.send_keys(PASSWORD)
+# browser.find_element(By.NAME, "button").click()
+
 # browser.get('https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp')
 browser.refresh()
 # time.sleep(1)
